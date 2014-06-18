@@ -64,7 +64,7 @@ class Worker():
 			if '//review//' in c['content']['raw']:
 				n = c['user']['display_name']
 				u = c['user']['username']
-				print 'Found reviewer for %s: %s' % (id, n)
+				print 'Found reviewer for %s: %s' % (id, n.encode('utf8'))
 				rev['name'] = n
 				rev['user'] = u
 				req['reviewer'] = n
