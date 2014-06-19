@@ -54,7 +54,7 @@ class Worker():
 			finally:
 				u.close()
 
-		# Make sure revies are sorted by date
+		# Make sure reviews are sorted by date
 		comments = data.get('values') or []
 		comments.sort(key=lambda r: r.get('created_on'))
 
